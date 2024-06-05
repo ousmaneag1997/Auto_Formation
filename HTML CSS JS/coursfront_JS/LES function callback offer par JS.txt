@@ -1,0 +1,28 @@
+// LES function callback offer par JS
+// -Foreach : foreach appel une fonction callback 
+const listEtudiant =['OUSMANE','ALI','MOUSSA']
+listEtudiant.forEach(function(el){
+console.log(el)
+})
+
+// FONCTION  MAP : elle effzectue une actions sur chaque element du tableau et retourner un tableau avec laction effectuer sur les element
+const Numplace =[1,2,3,4]
+const resultMap =Numplace.map(function(el){
+    return el*2
+})
+console.log(resultMap)
+// function filter: permet de filtrer un tableau 
+const equipe=['mali','cote_divoir','egypte','senegal']
+const resultatfiltre = equipe.filter(function(el){
+    return el.length<5
+
+
+})
+console.log(resultatfiltre)
+
+// function reduce:
+const tab2=[1,2,3,4]
+const reducetab=tab2.reduce(function(a,b){
+return a+b
+})
+console.log(reducetab);
